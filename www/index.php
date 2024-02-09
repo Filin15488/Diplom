@@ -32,7 +32,7 @@
         </div>
     </main>
 
-    <?php require_once("./inclusion/footer_unlogin.php")?>
+    <?php require_once("./inclusion/footer.php"); ?>
 </body>
 </html>
 

@@ -24,7 +24,7 @@ services:
     image: nginx:alpine
     container_name: php-nginx
     ports:
-      - 8080:80
+      - 80:80
     volumes:
       - ./www/:/var/www/html
       - ./config/nginx/:/etc/nginx/conf.d/
