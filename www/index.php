@@ -7,7 +7,16 @@
     <?php require_once("./inclusion/header.php") ?>
 
     <main>
-        Основаная информация на странице
+        <div id="title_on_page">
+            ПОИСК СЛЕДОВ ПРИСУТСТВИЯ СТЕГАНОГРАФИЧЕСКОГО ПО
+        </div>
+        <div class="separator"></div>
+
+
+
+
+        
+
     </main>
 
     <?php require_once("./inclusion/footer.php") ?>
