@@ -6,7 +6,7 @@
 <body>
     <?php require_once("./inclusion/header_unlogin.php") ?>
 
-    <main class="login_main">
+    <main>
         <h3 id="login">Авторизация</h3>
         <div class="separator"></div>
 
