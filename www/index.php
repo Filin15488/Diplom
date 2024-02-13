@@ -11,7 +11,19 @@
             ПОИСК СЛЕДОВ ПРИСУТСТВИЯ СТЕГАНОГРАФИЧЕСКОГО ПО
         </div>
         <div class="separator"></div>
+        <div class="content-container">
+            <div class="content-row">
+                <div class="content-column">Работа со стеганопрограммами:</div>
+                <div class="content-column">Стеганографические программы:</div>
+            </div>
+            <div class="content-row">
+                <div class="content-column">Идентификация стеганопрограмм:</div>
+                <div class="content-column">Поиск следов присутствия:</div>
+            </div>
+        </div>
+            
 
+        </div>
 
 
 
