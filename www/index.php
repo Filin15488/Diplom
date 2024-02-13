@@ -18,17 +18,28 @@
                     <div class="content-img">
                         <img src="./images/steganoprograms_work.png" alt="">
                     </div>
+                    <div class="main-button">
+                        <form action="#" method="post">
+                            <button type="submit" class="btn">
+                                ДОБАВИТЬ 
+                                <br>
+                                СТЕГАНОПРОГРАММУ
+                            </button>
+                        </form>
+                    </div>
                 </div>
                 <div class="content-column">Стеганографические программы:
                     <div class="content-img">
                         <img src="./images/steganoprograms.png" alt="">
                     </div>
-                    <div class="authentication-button">
-                        <button type="submit" class="btn">
-                            СПИСОК УЧТЕННЫХ 
-                            <br>
-                            СТЕГАНОГРАФИЧЕСКИХ ПРОГРАММ
-                        </button>
+                    <div class="main-button">
+                        <form action="#" method="post">
+                            <button type="submit" class="btn">
+                                СПИСОК УЧТЕННЫХ 
+                                <br>
+                                СТЕГАНОГРАФИЧЕСКИХ ПРОГРАММ
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -38,11 +49,44 @@
                     <div class="content-img">
                         <img src="./images/steganoprograms_identification.png" alt="">
                     </div>
+                    <div class="main-button">
+                        <form action="#" method="post">
+                            <button type="submit" class="btn">
+                                ИДЕНТИФИКАЦИЯ 
+                                <br>
+                                СТЕГАНОПРОГРАММ
+                            </button>
+                        </form>
+                    </div>
                 </div>
                 <div class="content-column">
                     Поиск следов присутствия:
                     <div class="content-img">
                         <img src="./images/steganoprograms_search.png" alt="">
+                    </div>
+                    <div class="main-button">
+                        <form action="#" method="post">
+                            <button type="submit" class="btn">
+                            СОЗДАНИЕ  
+                            <br>
+                            ПОИСКОВОГО ДЕЛА 
+                            </button>
+                        </form>
+                        <form action="#" method="post">
+                            <button type="submit" class="btn">
+                            ПОИСКОВОЕ ДЕЛО   
+                            <br>
+                            (добавление объектов поиска) 
+                            </button>
+                        </form>
+                        <form action="#" method="post">
+                            <button type="submit" class="btn">
+                            ПОИСК ОБЪЕКТОВ    
+                            <br>
+                            (в рамках конкретного дела) 
+                            </button>
+                        </form>
+
                     </div>
                 </div>
             </div>
