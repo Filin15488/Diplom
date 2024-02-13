@@ -52,6 +52,10 @@ main{
     text-align: center;
 }
 
+.login_main {
+    height: 100vh;
+}
+
 .separator
 {
     width: 72px;
@@ -182,7 +186,13 @@ main{
 }
 
 .main-button form {
-    margin: 4px 12px;
+    margin: 0px 12px;
+}
+
+@media (width<1440px){
+    .main-button form {
+        margin: 2px 12px;
+    }
 }
 
 

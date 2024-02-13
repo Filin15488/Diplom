@@ -2,7 +2,7 @@
 $header = <<<HEAD
 <header>
 <div class="header-image">
- <img src="../images/logo.png" alt="logo">
+ <a href="../index.php"><img src="../images/logo.png" alt="logo"></a>
 </div>
 <div class="header-text">
  <h1>ВОРОНЕЖСКИЙ ИНСТИТУТ МВД РОССИИ</h1> 

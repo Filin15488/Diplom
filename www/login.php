@@ -6,7 +6,7 @@
 <body>
     <?php require_once("./inclusion/header.php") ?>
 
-    <main>
+    <main class="login_main">
         <h3 id="login">Авторизация</h3>
         <div class="separator"></div>
 
