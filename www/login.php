@@ -4,7 +4,7 @@
 <?php require_once("./inclusion/head.php")?>
 </head>
 <body>
-    <?php require_once("./inclusion/header.php") ?>
+    <?php require_once("./inclusion/header_unlogin.php") ?>
 
     <main class="login_main">
         <h3 id="login">Авторизация</h3>
