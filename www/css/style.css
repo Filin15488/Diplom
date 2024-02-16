@@ -6,9 +6,10 @@
 header {
     /* height: 100%; */
     padding-bottom: 10px;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     /* flex-grow: 1; */
     background-image: url("../images/fon.png");
     background-size: cover;
@@ -33,6 +34,11 @@ header h2
     color:#0f1b7a;
     text-align:center;
 }
+
+.logout-icon {
+    margin-right: 0;
+}
+
 
 body {
     background-color: #f1e378;
