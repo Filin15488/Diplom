@@ -1,10 +1,14 @@
+<?php
+require_once("./inclusion/security.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <?php require_once("./inclusion/head.php")?>
 </head>
 <body>
-    <?php require_once("./inclusion/header.php") ?>
+    <?php require_once("./inclusion/header_login.php") ?>
 
     <main>
         <div id="title_on_page">
@@ -94,10 +98,7 @@
             
 
         </div>
-
-
-
-        
+                
 
     </main>
 

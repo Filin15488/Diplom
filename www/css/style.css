@@ -4,19 +4,15 @@
     box-sizing: border-box;
 }
 header {
-    /* height: 100%; */
-    padding-bottom: 10px;
-    width: 100%;
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
-    /* flex-grow: 1; */
-    background-image: url("../images/fon.png");
-    background-size: cover;
-    text-align: center;
-    justify-content: center;
+    width: 100%;
+    justify-content: center; 
     align-items: center;
-  
+    text-align: center;
+    background-image: url('../images/fon.png');
+    background-size: cover;
+    margin-bottom: 24px;
 }
   
 header h1
@@ -35,10 +31,26 @@ header h2
     text-align:center;
 }
 
-.logout-icon {
-    margin-right: 0;
+header .header-content{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
+header .logout-img {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.login-errors{
+    margin-top: 50px;
+}
+
+.login-errors h2 {
+    color: brown;
+}
 
 body {
     background-color: #f1e378;

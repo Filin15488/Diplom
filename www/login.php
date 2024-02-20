@@ -29,6 +29,21 @@
                 </div>
             </form>
         </div>
+
+        
+            <?php 
+            if(!empty($_GET['verify'])){
+                if ($_GET['verify'] == 'data_error'){
+                echo "<div class='login-errors'>";
+                echo "<h2>Данные введены неверно. Попробуйте снова</h2>";
+
+                echo "</div>";
+                }
+            };
+            
+            
+            ?>
+
     </main>
 
     <?php require_once("./inclusion/footer.php"); ?>
