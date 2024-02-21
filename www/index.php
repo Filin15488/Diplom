@@ -23,13 +23,14 @@ require_once("./inclusion/security.php");
                         <img src="./images/steganoprograms_work.png" alt="">
                     </div>
                     <div class="main-button">
-                        <form action="#" method="post">
-                            <button type="submit" class="btn">
+                        <div>
+                            <a href="#" class="btn">
                                 ДОБАВИТЬ 
                                 <br>
                                 СТЕГАНОПРОГРАММУ
-                            </button>
-                        </form>
+                            </a>
+                        </div>
+
                     </div>
                 </div>
                 <div class="content-column">Стеганографические программы:
@@ -37,13 +38,14 @@ require_once("./inclusion/security.php");
                         <img src="./images/steganoprograms.png" alt="">
                     </div>
                     <div class="main-button">
-                        <form action="#" method="post">
-                            <button type="submit" class="btn">
+                        <div>
+                            <a href="#" class="btn">
                                 СПИСОК УЧТЕННЫХ 
                                 <br>
                                 СТЕГАНОГРАФИЧЕСКИХ ПРОГРАММ
-                            </button>
-                        </form>
+                            </a>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -54,13 +56,15 @@ require_once("./inclusion/security.php");
                         <img src="./images/steganoprograms_identification.png" alt="">
                     </div>
                     <div class="main-button">
-                        <form action="#" method="post">
-                            <button type="submit" class="btn">
+                        <div>
+                            <a href="#" class="btn">
                                 ИДЕНТИФИКАЦИЯ 
                                 <br>
                                 СТЕГАНОПРОГРАММ
-                            </button>
-                        </form>
+
+                            </a>
+                        </div>
+                        
                     </div>
                 </div>
                 <div class="content-column">
@@ -70,27 +74,27 @@ require_once("./inclusion/security.php");
                     </div>
 
                     <div class="main-button">
-                        <form action="#" method="post">
-                            <button type="submit" class="btn">
+                        <div>
+                        <a href="#" class="btn">
                             СОЗДАНИЕ  
                             <br>
-                            ПОИСКОВОГО ДЕЛА 
-                            </button>
-                        </form>
-                        <form action="#" method="post">
-                            <button type="submit" class="btn">
+                            ПОИСКОВОГО ДЕЛА
+                        </a>
+                        </div>
+                        <div>
+                        <a href="#" class="btn">
                             ПОИСКОВОЕ ДЕЛО   
                             <br>
                             (добавление объектов поиска) 
-                            </button>
-                        </form>
-                        <form action="#" method="post">
-                            <button type="submit" class="btn">
+                        </a>
+                        </div>
+                        <div>
+                        <a href="#" class="btn">
                             ПОИСК ОБЪЕКТОВ    
                             <br>
                             (в рамках конкретного дела) 
-                            </button>
-                        </form>
+                        </a>
+                        </div>
 
                     </div>
                 </div>
@@ -100,15 +104,18 @@ require_once("./inclusion/security.php");
             if (trim($_SESSION['role']) == 'administrator') {
                 echo <<<ADMIN_PANEL
                 <div class="content-row">
-                    <div class="admin_panel">
-                        <div id="title_on_page">Администрирование</div>
+                <div class="admin_panel">
+                    <div id="title_on_page">Администрирование</div>
                         <div class="admin_panel_content">
                             <div class="admin_panel-logo">
                                 <img src="./images/admin_img.png" alt="">
                             </div>
                             <div class="admin_panel_content-actions">
+                                <div>
                                 <a href="./add_user.php" class="btn">Добавить нового пользователя</a> 
+                                </div>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -117,6 +124,8 @@ require_once("./inclusion/security.php");
             }
 
             ?>
+
+                
 
 
        

@@ -120,24 +120,24 @@ main{
     margin: 0 20px;
 }
 
-.authentication_text {
+.authentication_text, .add_user_columns {
     font-size:28px;
     font-weight:bold;
     color:#0A1357;
     font-family:initial;
 }
 
-.authentication_input-text, .authentication_input-pass {
+.authentication_input-text, .authentication_input-pass, .add_user_columns {
     width: 580px;
 }
 
 @media (width<740px) {
-    .authentication_input-text, .authentication_input-pass {
+    .authentication_input-text, .authentication_input-pass, .add_user_columns {
         width: 100%;
     }
 }
 
-.authentication input {
+.authentication input, .add_user_columns input {
     width: 100%;
     padding:10px;
     border-radius:10px;
@@ -206,16 +206,72 @@ main{
     
 }
 
-.main-button form {
+.main-button div {
     margin: 0px 12px;
 }
 
 @media (width<1440px){
-    .main-button form {
+    .main-button div {
         margin: 2px 12px;
     }
 }
+.admin_panel {
+    display: flex;
+    flex-direction: column;
+}
 
+.admin_panel_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.admin_panel-logo {
+    /* width: 100%; */
+    height: 100%;
+}
+.admin_panel-logo img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.admin_panel_content-actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.admin_panel_content-actions div {
+    margin: 24px 0;
+}
+
+
+.add_user_form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;  
+   
+}
+
+.add_user_form_rows {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 12px;
+}
+
+.add_user_columns {
+    display: flex;
+
+    
+}
+
+.add_user_columns-text {
+    
+}
 
 .btn 
 {
@@ -235,6 +291,7 @@ main{
     cursor:pointer;
     border:1px solid rgb(9, 9, 105);
     border-radius:4px;
+    text-decoration: none;
 }
 
 .btn:hover 
