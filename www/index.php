@@ -68,6 +68,7 @@ require_once("./inclusion/security.php");
                     <div class="content-img">
                         <img src="./images/steganoprograms_search.png" alt="">
                     </div>
+
                     <div class="main-button">
                         <form action="#" method="post">
                             <button type="submit" class="btn">
@@ -94,10 +95,36 @@ require_once("./inclusion/security.php");
                     </div>
                 </div>
             </div>
+            <?php
+
+            if (trim($_SESSION['role']) == 'administrator') {
+                echo <<<ADMIN_PANEL
+                <div class="content-row">
+                    <div class="admin_panel">
+                        <div id="title_on_page">Администрирование</div>
+                        <div class="admin_panel_content">
+                            <div class="admin_panel-logo">
+                                <img src="./images/admin_img.png" alt="">
+                            </div>
+                            <div class="admin_panel_content-actions">
+                                <a href="./add_user.php" class="btn">Добавить нового пользователя</a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                ADMIN_PANEL;
+            }
+
+            ?>
+
+
+       
+        
+        
         </div>
             
 
-        </div>
                 
 
     </main>
