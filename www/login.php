@@ -31,15 +31,27 @@
         </div>
 
         
-            <?php 
-            if(!empty($_GET['verify'])){
-                if ($_GET['verify'] == 'data_error'){
-                echo "<div class='login-errors'>";
-                echo "<h2>Данные введены неверно. Попробуйте снова</h2>";
-
-                echo "</div>";
-                }
-            };
+            <?php
+            function error_div(string $type_error, string $message)
+            {
+                if(!empty($_GET[$type_error])){
+                    if ($_GET[$type_error] == '1'){
+                    $error_div = "<div class='login-errors'><h2>". $message ."</h2></div>";
+                    echo $error_div;
+                    }
+                    
+                };
+                
+                // Пользователя с таким логином не существует
+            }
+            $error_list = [
+                'user_error' => 'Пользователя с таким логином не существует',
+                'pass_error' => 'Неверный пароль. Пожалуйста, попробуйте снова'
+            ];
+            if (!empty($_GET))
+            {
+            error_div(array_key_first($_GET), $error_list[array_key_first($_GET)]);
+            }
             
             
             ?>

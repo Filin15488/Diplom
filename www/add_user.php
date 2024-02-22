@@ -1,11 +1,6 @@
 <?php
-require_once("./inclusion/security.php");
-if (trim($_SESSION['role']) != 'administrator') 
-{
-    header("Location: ./login.php");
-    die();
-}
-
+session_start();
+require_once("./inclusion/security_admin.php");
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +16,7 @@ if (trim($_SESSION['role']) != 'administrator')
         <div class="separator"></div>
 
         <div class="add_user_form">
-            <form action="#" method="post">
+            <form action="./add_user_insert_db.php" method="post">
                 <div class="add_user_form_rows">
                     <div class="add_user_columns">
                         Введите имя пользователя
