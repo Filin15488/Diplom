@@ -2,12 +2,10 @@ version: "3.8"
 services:
   sqlserver:
     container_name: sqlserver
-    image: mcr.microsoft.com/mssql/server:2019-CU2-ubuntu-16.04
+    build: ./config/mssql
     user: root
     ports:
       - 1433:1433
-    env_file:
-      - ./config/.env
     volumes:
       - ./db/:/var/opt/mssql/data
    
@@ -30,8 +28,3 @@ services:
       - ./config/nginx/:/etc/nginx/conf.d/
     depends_on:
       - app
-
-networks:
-  default:
-    name: "backend"
-   # external: true

@@ -47,4 +47,8 @@ if ($result){
         header($url);
     }
 }
-
+if ($result == false) {
+    $err [] = "query_err";
+    $url = url_redirect($err,'login.php');
+    header($url);
+}

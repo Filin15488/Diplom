@@ -140,11 +140,17 @@ main{
     width: 580px;
 }
 
-@media (width<740px) {
-    .authentication_input-text, .authentication_input-pass, .add_user_columns {
+@media (width<860px) {
+    .authentication_input-text, .authentication_input-pass {
         width: 100%;
     }
 }
+@media (width<1150px){
+    .add_user_columns {
+        width: 100%;
+    }
+}
+
 
 .authentication input, .add_user_columns input {
     width: 100%;
