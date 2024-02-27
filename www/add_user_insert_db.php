@@ -4,8 +4,6 @@ require_once("./inclusion/security_admin.php");
 require_once("./inclusion/db.php");
 require_once("./inclusion/url_redirect_err.php");
 
-$error_add = array ();
-
 $error_add = [];
 
 $data = [
