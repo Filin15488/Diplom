@@ -303,6 +303,36 @@ main{
     color: #000;
 }
 
+.list_prog_container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.list_prog_container table 
+{ 
+    width: 100%; /* Ширина таблицы */
+    border-spacing: 0; /* Расстояние между ячейками */
+    border:3px solid #65a78b; 
+    font-family:sans-serif; 
+    text-align:center;
+    margin-bottom: 56px;
+}
+
+.list_prog_container tr:nth-child(2n) 
+{
+    background: #f1b978; /* Цвет фона */
+} 
+
+.list_prog_container tr:nth-child(1) 
+{
+    background: #f1e378; /* Цвет фона */
+    color: #000; /* Цвет текста */
+} 
+
+
+
 .btn 
 {
     color:#fff;

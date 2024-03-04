@@ -40,7 +40,7 @@ require_once("./inclusion/security.php");
                     </div>
                     <div class="main-button">
                         <div>
-                            <a href="#" class="btn">
+                            <a href="./list_prog/list_prog.php" class="btn">
                                 СПИСОК УЧТЕННЫХ 
                                 <br>
                                 СТЕГАНОГРАФИЧЕСКИХ ПРОГРАММ
@@ -101,8 +101,9 @@ require_once("./inclusion/security.php");
                 </div>
             </div>
             <?php
+            require_once("./inclusion/roles.php");
 
-            if (trim($_SESSION['role']) == 'administrator') {
+            if (trim($_SESSION['role']) == $roles['admin']) {
                 echo <<<ADMIN_PANEL
                 <div class="content-row">
                 <div class="admin_panel">
