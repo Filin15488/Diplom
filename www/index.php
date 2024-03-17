@@ -25,10 +25,15 @@ require_once("./inclusion/security.php");
                     </div>
                     <div class="main-button">
                         <div>
-                            <a href="#" class="btn">
+                            <a href="./work_stego/stego_add.php" class="btn">
                                 ДОБАВИТЬ 
                                 <br>
                                 СТЕГАНОПРОГРАММУ
+                            </a>
+                            <a href="#" class="btn">
+                                РЕДАКТИРОВАТЬ 
+                                <br>
+                                СТЕНОГРАММУ
                             </a>
                         </div>
 

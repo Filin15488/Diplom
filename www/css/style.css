@@ -129,6 +129,47 @@ main{
     margin: 0 20px;
 }
 
+.add_stego_form form {
+    width: 100%;
+}
+
+.add_stego_form
+{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.add_stego_form_row
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 12px;
+}
+
+.add_stego_form_column, .add_stego_form_column-text{
+    display: flex;
+    font-size:28px;
+    font-weight:bold;
+    color:#0A1357;
+    font-family:initial;
+    width: 27%; 
+}
+
+.add_stego_form_column input, select{
+    width: 100%;
+    padding:10px;
+    border-radius: 8px;
+    border: 2px solid #000;
+    text-align: center;
+
+}
+
+.add_stego_form_column-text{
+    text-align: left;
+}
+
 .authentication_text, .add_user_columns {
     font-size:28px;
     font-weight:bold;

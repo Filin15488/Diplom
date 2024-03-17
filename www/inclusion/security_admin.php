@@ -1,8 +1,8 @@
 <?php
-require_once("./inclusion/security.php");
-require_once("./inclusion/roles.php");
+require_once("security.php");
+require_once("roles.php");
 if (trim($_SESSION['role']) != $roles['admin']) 
 {
-    header("Location: ./login.php");
+    header("Location: ./index.php");
     die();
 }
