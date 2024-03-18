@@ -45,7 +45,7 @@ header .logout-img {
 }
 
 .login-errors{
-    margin-top: 50px;
+    margin: 50px auto;
 }
 
 .login-errors h2 {
@@ -53,7 +53,7 @@ header .logout-img {
 }
 
 .DONE-div {
-    margin-top: 50px;
+    margin: 50px auto;
 }
 
 .DONE-div h2 {
