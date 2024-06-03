@@ -25,9 +25,9 @@
                     Авторизация
                 </button>
             </form>
-            <div class="href">
+            <!-- <div class="href">
                 Нет аккаунта? Отправьте заявку для <a href="./registration.php">Демо-доступа</a>
-            </div>
+            </div> -->
         </div>
 
 

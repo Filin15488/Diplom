@@ -293,7 +293,7 @@ footer a:hover {
     /* height: 100vh; */
     height: 100%;
     background-color: var(--base-dark);
-    overflow-y: auto;
+    /* overflow-x: auto; */
 }
 
 
@@ -350,6 +350,27 @@ footer a:hover {
     /* height: 50px; */
 
     /* padding: 4px; */
+}
+
+.menu__item-message {
+    position: absolute;
+    color: white;
+    font-size: 12px;
+    left: 75px;
+    top: -5px;
+    background-color: var(--base-color-dark);
+    padding: 12px;
+    width: 250px;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s cubic-bezier(1,0,0,1), visibility 1s ease-in-out;
+    box-shadow: 3px 3px 7px var(--base-color-dark);
+}
+
+.menu__item-message--active {
+    opacity: 1;
+    visibility: visible;
 }
 
 /* Логотип */
@@ -714,3 +735,6 @@ svg g {
     display: flex;
     gap: 10px;
 }
+
+/* Идентификация стеганопрограмм */
+
