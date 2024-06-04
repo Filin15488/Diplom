@@ -6,3 +6,6 @@ db/*
 
 # Ignore everything in the www/delete_later/ directory
 www/delete_later/*
+
+# Ignore uploaded files
+www/files/*
