@@ -26,7 +26,20 @@ $prog = new Programs();
                     Идентификация стеганопрограмм
                 </div>
                 <div class="separator"></div>
-                
+                <div class="inside__containers identification__containers">
+
+                    <div class="identification__title">
+                        Добавить стеганопрограмму
+                    </div>
+                    <div class="identification__actions">
+                        <div class="button" id="addFile">Добавить файл</div>
+                        <div class="button" id="">Добавить папку с файлами</div>
+                        <div class="button" id="">Добавить ключи реестра</div>
+                    </div>
+
+
+                </div>
+
 
 
             </div>
@@ -35,7 +48,7 @@ $prog = new Programs();
         <div class="modal-parent" id="modal">
             <div class="modal-wrapper">
                 <div class="modal">
-
+                    <?php require_once("./modal.AddFile.php"); ?>
                 </div>
             </div>
         </div>
@@ -49,7 +62,8 @@ $prog = new Programs();
 
 
 
-    <script src="./js/main.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/identification.js"></script>
 </body>
 
 </html>
