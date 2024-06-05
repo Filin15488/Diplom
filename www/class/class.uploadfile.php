@@ -69,6 +69,9 @@ class UploadFile
             return false;
         }
     }
+    public function get_filename () {
+        return $this->current_file['name'];
+    }
 
     // private
     private $current_file; // array         |   загружаемый файл

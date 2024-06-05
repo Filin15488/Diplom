@@ -1,6 +1,6 @@
 <div class="addFolderFilesForm" id="addFolderFilesForm">
     <h2>Добавление дирректории</h2>
-    <form action="#" method="post" enctype="multipart/form-data">
+    <form action="./addFolder.php" method="post" enctype="multipart/form-data">
         <div class="addFolder-row-1">
             <div class="addFolder-item">
                 Выберете стеганопрограмму
@@ -26,8 +26,16 @@
             </div>
 
         </div>
+        <div class="addFolder-row-3">
+            <div class="addFile-item">
+                Сохранить исходные файл на сервере?
+            </div>
+            <div class="addFile-item">
+                <input type="checkbox" name="saveFile" id="saveFile" class="checkbox-input">
+            </div>
+        </div>
 
-        <div class="addFolder-row-3 inside__containers" id="uploadDirectory"></div>
+        <div class="addFolder-row-4 inside__containers" id="uploadDirectory"></div>
 
 
 

@@ -765,7 +765,7 @@ svg g {
 
 }
 
-.addFile-row-2, .addFile-row-3 {
+.addFile-row-2, .addFile-row-3, .addFolder-row-3 {
     display: flex;
     justify-content: space-between;
     align-items: center
@@ -817,7 +817,7 @@ svg g {
     justify-content: space-between;
     align-items: center;
 }
-.addFolder-row-3
+.addFolder-row-4
 {
     display: none;
     color: darkslategrey;
