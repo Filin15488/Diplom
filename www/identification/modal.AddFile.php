@@ -1,4 +1,5 @@
 <div class="addFileForm" id="addFileForm">
+    <h2>Добавление файла</h2>
     <form action="./addFile.php" method="post" enctype="multipart/form-data">
         <div class="addFile">
             <div class="addFile-row-1">
@@ -18,18 +19,12 @@
                     Выберете файл
                 </div>
                 <div class="addFile-item">
-                    <label class="input-file">
+                    <label class="input-file upload-files">
                         <input type="file" name="file">
                         <span>ВЫБЕРИТЕ ФАЙЛ</span>
                         <!-- <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script> -->
                         <script src="../js/jquery/2.1.1/jquery.min.js"></script>
-                        <script>
-                            $('.input-file input[type=file]').on('change', function() {
-                                let file = this.files[0];
-                                $(this).sty
-                                $(this).next().html(file.name);
-                            });
-                        </script>
+
                     </label>
                 </div>
             </div>

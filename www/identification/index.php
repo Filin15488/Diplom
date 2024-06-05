@@ -33,7 +33,7 @@ $prog = new Programs();
                     </div>
                     <div class="identification__actions">
                         <div class="button" id="addFile">Добавить файл</div>
-                        <div class="button" id="">Добавить папку с файлами</div>
+                        <div class="button" id="addFolder">Добавить папку с файлами</div>
                         <div class="button" id="">Добавить ключи реестра</div>
                     </div>
 
@@ -49,6 +49,7 @@ $prog = new Programs();
             <div class="modal-wrapper">
                 <div class="modal">
                     <?php require_once("./modal.AddFile.php"); ?>
+                    <?php require_once("./modal.AddFolderFiles.php"); ?>
                 </div>
             </div>
         </div>

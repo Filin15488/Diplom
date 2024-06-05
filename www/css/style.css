@@ -808,6 +808,12 @@ svg g {
     border-color: var(--base-color-hover);
 }
 
-.addFileForm {
+.addFileForm, .addFolderFilesForm {
     display: none;
+}
+/* Модальное окно с выбором директорий */
+.addFolder-row-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
