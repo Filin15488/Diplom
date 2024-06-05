@@ -822,3 +822,24 @@ svg g {
     display: none;
     color: darkslategrey;
 }
+
+/* Handlers administration */
+/* .errorDiv, .doneDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+.handler {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Первый столбец в два раза меньше второго */
+    grid-template-rows: 1fr 1fr; /* Оба ряда одинакового размера */
+    gap: 10px; /* Промежуток между ячейками */
+}
+
+.handler-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}

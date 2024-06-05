@@ -8,6 +8,12 @@ const modal = document.getElementById("modal");
 const addFileForm = document.getElementById("addFileForm");
 const addFolderFilesFormButton = document.getElementById("addFolderFilesForm");
 
+// Form handlers
+const handler = document.getElementById("handler");
+const errorHandler = document.getElementById("error-message");
+const doneHandler = document.getElementById("done-message");
+
+
 // EVENTS
 addFileButton.addEventListener("click", () => {
   modal.classList.add("modal-parent--open");
@@ -28,6 +34,10 @@ modal.addEventListener("click", function (event) {
   modal.classList.remove("modal-parent--open")
   addFileForm.style.display = "none";
   addFolderFilesFormButton.style.display = "none";
+  handler.style.display = "none";
+  errorHandler.style.display = "none";
+  doneHandler.style.display = "none";
+
 })
 
 // Закрытие при нажатии на Esc
@@ -36,6 +46,9 @@ window.addEventListener("keydown", function (event) {
     modal.classList.remove("modal-parent--open")
     addFileForm.style.display = "none";
     addFolderFilesFormButton.style.display = "none";
+    handler.style.display = "none";
+    errorHandler.style.display = "none";
+    doneHandler.style.display = "none";
   }
 })
 
@@ -65,4 +78,45 @@ $('.upload-directory input[type=file]').on('change', function () {
   $('#uploadDirectory').html(fileNames.join('<br>'));
   $(this).next().html(directoryName);
   listDirrectory.style.display = "block";
+});
+
+// обработчик ответов на форму
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Получение текущего URL
+  const urlParams = new URLSearchParams(window.location.search);
+  // Получение параметров err и success
+  const errParam = urlParams.get('err');
+  const successParam = urlParams.get('success');
+
+  // Парсинг параметров в массивы
+  const errors = errParam ? errParam.split(',') : [];
+  const successes = successParam ? successParam.split(',') : [];
+
+  // Создание объекта с результатами
+  const parsedResponse = {
+    errors: errors,
+    successes: successes
+  };
+
+  // Логирование результата
+  console.log(parsedResponse);
+
+  // Запись данных в соответствующие блоки
+  const errorMessageDiv = document.getElementById('error-message');
+  const doneMessageDiv = document.getElementById('done-message');
+
+  if (errorMessageDiv) {
+    errorMessageDiv.innerHTML = errors.length > 0 ? errors.join('<br>') : 'No errors';
+    modal.classList.add("modal-parent--open");
+    errorHandler.style.display = "flex";
+
+  }
+
+  if (doneMessageDiv) {
+    doneMessageDiv.innerHTML = successes.length > 0 ? successes.join('<br>') : 'No successes';
+
+    modal.classList.add("modal-parent--open");
+    doneHandler.style.display = "flex";
+  }
 });

@@ -50,6 +50,7 @@ $prog = new Programs();
                 <div class="modal">
                     <?php require_once("./modal.AddFile.php"); ?>
                     <?php require_once("./modal.AddFolderFiles.php"); ?>
+                    <?php require_once("./modal.FormHandler.php"); ?>
                 </div>
             </div>
         </div>
