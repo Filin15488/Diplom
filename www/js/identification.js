@@ -85,38 +85,41 @@ $('.upload-directory input[type=file]').on('change', function () {
 document.addEventListener('DOMContentLoaded', () => {
   // Получение текущего URL
   const urlParams = new URLSearchParams(window.location.search);
-  // Получение параметров err и success
-  const errParam = urlParams.get('err');
-  const successParam = urlParams.get('success');
+  if (urlParams.size > 0) {
+    // Получение параметров err и success
+    const errParam = urlParams.get('err');
+    const successParam = urlParams.get('success');
 
-  // Парсинг параметров в массивы
-  const errors = errParam ? errParam.split(',') : [];
-  const successes = successParam ? successParam.split(',') : [];
+    // Парсинг параметров в массивы
+    const errors = errParam ? errParam.split(',') : [];
+    const successes = successParam ? successParam.split(',') : [];
 
-  // Создание объекта с результатами
-  const parsedResponse = {
-    errors: errors,
-    successes: successes
-  };
+    // Создание объекта с результатами
+    const parsedResponse = {
+      errors: errors,
+      successes: successes
+    };
 
-  // Логирование результата
-  console.log(parsedResponse);
+    // Логирование результата
+    console.log(parsedResponse);
 
-  // Запись данных в соответствующие блоки
-  const errorMessageDiv = document.getElementById('error-message');
-  const doneMessageDiv = document.getElementById('done-message');
+    // Запись данных в соответствующие блоки
+    const errorMessageDiv = document.getElementById('error-message');
+    const doneMessageDiv = document.getElementById('done-message');
 
-  if (errorMessageDiv) {
-    errorMessageDiv.innerHTML = errors.length > 0 ? errors.join('<br>') : 'No errors';
-    modal.classList.add("modal-parent--open");
-    errorHandler.style.display = "flex";
+    if (errorMessageDiv) {
+      errorMessageDiv.innerHTML = errors.length > 0 ? errors.join('<br>') : 'No errors';
+      modal.classList.add("modal-parent--open");
+      errorHandler.style.display = "flex";
 
+    }
+
+    if (doneMessageDiv) {
+      doneMessageDiv.innerHTML = successes.length > 0 ? successes.join('<br>') : 'No successes';
+
+      modal.classList.add("modal-parent--open");
+      doneHandler.style.display = "flex";
+    }
   }
 
-  if (doneMessageDiv) {
-    doneMessageDiv.innerHTML = successes.length > 0 ? successes.join('<br>') : 'No successes';
-
-    modal.classList.add("modal-parent--open");
-    doneHandler.style.display = "flex";
-  }
 });
