@@ -40,22 +40,29 @@ window.addEventListener("keydown", function (event) {
 })
 
 // кнопка выбора файлов
-$('.upload-files input[type=file]').on('change', function() {
+$('.upload-files input[type=file]').on('change', function () {
   let file = this.files[0];
   $(this).sty
   $(this).next().html(file.name);
 });
 
-// списко выгрузки из дирректории
-
-
+// список выгружаемой дирректории
+const listDirrectory = document.getElementById("uploadDirectory");
 
 // кнопка выбора папки
-$('.upload-directory input[type=file]').on('change', function() {
+$('.upload-directory input[type=file]').on('change', function () {
   let files = this.files;
   let fileNames = [];
   for (let i = 0; i < files.length; i++) {
-      fileNames.push(files[i].name);
+    fileNames.push(files[i].name);
   }
-  $(this).next().html(fileNames.join(', '));
+  if (files.length > 0) {
+    // Получаем путь к первому файлу
+    let firstFilePath = files[0].webkitRelativePath;
+    // Извлекаем имя директории из пути
+    directoryName = firstFilePath.split('/')[0];
+  }
+  $('#uploadDirectory').html(fileNames.join('<br>'));
+  $(this).next().html(directoryName);
+  listDirrectory.style.display = "block";
 });

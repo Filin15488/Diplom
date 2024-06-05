@@ -817,3 +817,8 @@ svg g {
     justify-content: space-between;
     align-items: center;
 }
+.addFolder-row-3
+{
+    display: none;
+    color: darkslategrey;
+}

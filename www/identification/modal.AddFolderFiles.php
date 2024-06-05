@@ -27,9 +27,7 @@
 
         </div>
 
-        <div class="addFolder-row-3 inside__containers">
-
-        </div>
+        <div class="addFolder-row-3 inside__containers" id="uploadDirectory"></div>
 
 
 
