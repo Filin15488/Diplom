@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (errorMessageDiv) {
       errorMessageDiv.innerHTML = errors.length > 0 ? errors.join('<br>') : 'No errors';
       modal.classList.add("modal-parent--open");
-      errorHandler.style.display = "flex";
+      errorHandler.style.display = "grid";
 
     }
 
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
       doneMessageDiv.innerHTML = successes.length > 0 ? successes.join('<br>') : 'No successes';
 
       modal.classList.add("modal-parent--open");
-      doneHandler.style.display = "flex";
+      doneHandler.style.display = "grid";
     }
   }
 

@@ -832,7 +832,7 @@ svg g {
 } */
 
 .handler {
-    display: grid;
+    display: none;
     grid-template-columns: 1fr 2fr; /* Первый столбец в два раза меньше второго */
     grid-template-rows: 1fr 1fr; /* Оба ряда одинакового размера */
     gap: 10px; /* Промежуток между ячейками */
