@@ -11,34 +11,111 @@ require_once("./inclusion/security.php");
 </head>
 
 <body>
-    
-        <!-- левая панель навигации -->
-        <?php require_once("./inclusion/nav-panel.php") ?>
-        <!-- класс с контентом -->
-        <div class="content-container">
-            <?php require_once("./inclusion/header.php") ?>
-            <!-- всё интересное в main -->
-            <main>
-                <div class="main__container">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab ad eaque labore harum, alias commodi
-                    odit nihil? Beatae aut debitis ad pariatur, ratione deleniti maiores labore consectetur earum, quia
-                    rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi asperiores laborum ducimus voluptatibus pariatur suscipit facere atque error in officiis, neque quos aliquam veritatis ab omnis. Rerum explicabo tempore fugiat?
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam repudiandae tenetur eius porro, cumque doloremque odio incidunt excepturi, possimus deleniti nobis dicta ab ad nisi fuga, impedit neque ut molestias!
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi unde officiis omnis sapiente beatae quos sed pariatur maiores ipsam animi dolore ducimus ad quas error est recusandae, laborum autem quia.
+
+    <!-- левая панель навигации -->
+    <?php require_once("./inclusion/nav-panel.php") ?>
+    <!-- класс с контентом -->
+    <div class="content-container">
+        <?php require_once("./inclusion/header.php") ?>
+        <!-- всё интересное в main -->
+        <main>
+            <div class="main__container index__container">
+                <div class="faq">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            О проекте
+                        </div>
+                        <div class="faq-answer">
+                            "Stego_as" - инновационное web-приложение для поиска следов присутствия стеганографического программного обеспечения на компьютерах и носителях информации. Наша цель - повысить эффективность компьютерно-технических экспертиз, направленных на стеганоанализ, за счёт автоматизации процесса обнаружения стеганографических данных.
+                            <br>
+                            Stego_as - это надёжный и эффективный инструмент для выявления стеганографических данных. Присоединяйтесь к нам, чтобы сделать мир цифровой информации более прозрачным и защищённым!
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Принцип работы
+                        </div>
+                        <div class="faq-answer">
+                            Stego_as использует методику подсчёта хэш-значений файлов и сравнения их с нашей постоянно обновляемой базой данных известных стеганографических программ и контейнеров.
+                            <p>Основные принципы:</p>
+                            <ol>
+                                <li>
+                                    Анализ хэш-значений: приложение подсчитывает хэш-значения файлов и сравнивает их с базой данных, чтобы определить возможное присутствие стеганографического ПО.
+                                </li>
+                                <li>
+                                    Сравнение контейнеров: если существует подозрение на присутствие стеганографического ПО, то приложение проверяет его наличие путём сравнения контрольной суммы контейнера.
+                                </li>
+
+                            </ol>
+                        </div>
+
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Преимущества Stego_as
+                        </div>
+                        <div class="faq-answer">
+                            <ol>
+                                <li>
+                                    Автоматизация процесса анализа: исключает необходимость ручного анализа, экономя время и ресурсы экспертов.
+                                </li>
+                                <li>
+                                    Высокая точность: использование проверенных алгоритмов и обновляемой базы данных обеспечивает надёжность результатов.
+                                </li>
+                                <li>
+                                    Удобство использования: простой и понятный интерфейс делает работу с приложением доступной даже для пользователей без специальной технической подготовки.
+                                </li>
+                                <li>
+                                    Своевременные обновления: постоянное обновление базы данных и улучшение алгоритмов для соответствия современным угрозам.
+                                </li>
+                            </ol>
+
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                        Кто может воспользоваться Stego_as?
+                        </div>
+                        <div class="faq-answer">
+                            <ol>
+                                <li>
+                                Компьютерные эксперты: для повышения эффективности проведения экспертиз.
+                                </li>
+                                <li>
+                                Органы правопорядка: для расследования преступлений, связанных со скрытием информации.
+                                </li>
+                                <li>
+                                Корпоративные пользователи: для защиты корпоративных данных от потенциальных угроз.
+                                </li>
+                                <li>
+                                Исследователи и студенты: для обучения и проведения научных исследований в области стеганоанализа.
+                                </li>
+                            </ol>
+
+                        </div>
+                    </div>
+
+
+
+                    <!-- Add more FAQ items as needed -->
                 </div>
-            </main>
 
-            <!-- <button></button> -->
+            </div>
+        </main>
 
-            <!-- подвал -->
-            <?php require_once("./inclusion/footer.php") ?>
-        </div>
+        <!-- <button></button> -->
 
-    
+        <!-- подвал -->
+        <?php require_once("./inclusion/footer.php") ?>
+    </div>
+
+
 
 
 
     <script src="./js/main.js"></script>
+    <script src="/js/index.js"></script>
 </body>
 
 </html>

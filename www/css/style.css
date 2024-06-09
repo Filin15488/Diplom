@@ -400,6 +400,61 @@ footer a:hover {
     /* height: auto; */
 }
 
+/* index */
+
+h2 {
+    font-family: var(--second-family);
+    color: var(--base-color-dark);
+}
+
+
+
+.faq {
+    width: 100%;
+    margin: 20px auto;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+    border: 2px solid var(--base-color);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.faq-question {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: var(--base-color);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    user-select: none;
+}
+
+.faq-question:hover {
+    background-color: var(--base-color-hover); /* Darker shade for hover */
+}
+
+.faq-answer {
+    font-size: 30px;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    background-color: #ffffff;
+    transition: max-height 0.3s ease-out, padding 0.3s;
+}
+
+.faq-answer ol {
+    margin: 0 0 0 54px;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 1000px; /* Large enough to fit content */
+    padding: 20px;
+}
+
 /* Формы */
 
 .modal-parent {
