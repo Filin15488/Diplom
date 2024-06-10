@@ -20,6 +20,8 @@ require_once("./inclusion/security.php");
         <!-- всё интересное в main -->
         <main>
             <div class="main__container index__container">
+                <div class="titile_on_page">FAQ</div>
+                <div class="separator"></div>
                 <div class="faq">
                     <div class="faq-item">
                         <div class="faq-question">

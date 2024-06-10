@@ -33,7 +33,7 @@
                 <div class="menu__item-message" id="business-message">
                     Поисковые дела
                 </div>
-                <a href="#">
+                <a href="../business/">
                     <img src="../img/business.svg" class="menu__item_icon">
                 </a>
             </div>
