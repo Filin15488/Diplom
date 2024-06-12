@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <div class="nav-container" id="nav-container">
     <div class="nav-container-top">
         <div class="logo" id="logo-nav">
@@ -21,6 +24,9 @@
                     <img src="../img/list.svg" class="menu__item_icon">
                 </a>
             </div>
+            <?php 
+            if ($_SESSION['role'] == "administrator") {
+            ?>
             <div class="menu__item" id="identification_icon">
                 <div class="menu__item-message" id="identification-message">
                     Идентификация стеганопрограмм
@@ -29,6 +35,9 @@
                     <img src="../img/identification.svg" class="menu__item_icon">
                 </a>
             </div>
+            <?php
+            }
+            ?>
             <div class="menu__item" id="business_icon">
                 <div class="menu__item-message" id="business-message">
                     Поисковые дела
@@ -37,6 +46,9 @@
                     <img src="../img/business.svg" class="menu__item_icon">
                 </a>
             </div>
+            <?php 
+            if ($_SESSION['role'] == "administrator") {
+            ?>
             <div class="menu__item" id="stego_work_icon">
                 <div class="menu__item-message" id="stego_work-message">
                     Работа со стеганопрограммами
@@ -53,6 +65,9 @@
                     <img src="../img/prefernce.svg" class="menu__item_icon">
                 </a>
             </div>
+            <?php
+            }
+            ?>
 
         </div>
     </div>
