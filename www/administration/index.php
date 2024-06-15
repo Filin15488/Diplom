@@ -26,6 +26,7 @@ require_once("../inclusion/security_admin.php");
                     <div class="admin__content admin__actions">
                         <div class="button admin_button" id="addNewUser">Добавить нового пользователя</div>
                         <div class="button admin_button" id="editUser">Редактирование информации о пользователях</div>
+                        <div class="button admin_button" id="activateUsers">Активация/деактивация пользователя</div>
                     </div>
 
                 </div>
@@ -39,6 +40,7 @@ require_once("../inclusion/security_admin.php");
                 <div class="modal">
                     <?php require_once("./modal.AddUser.php"); ?>
                     <?php require_once("./modal.EdditUser.php"); ?>
+                    <?php require_once("./modal.activate.php"); ?>
                     <?php require_once("./modal.FormHandler.php"); ?>
                 </div>
             </div>

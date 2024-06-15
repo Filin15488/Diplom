@@ -789,6 +789,31 @@ svg g {
 }
 
 
+.activate {
+    display: none;
+    flex-direction: column;
+}
+
+.activateUser {
+    width: 100%;
+    /* margin: 24px 24px; */
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--base-color-transparency);
+    border-radius: var(--base-border-radius);
+
+
+}
+
+.activateUser * {
+    /* margin: 0 24px;
+     */
+    padding-left:   68px;
+    padding-right:  68px;
+    /* margin-left:    68px; */
+    /* margin-right:   68px; */
+}
+
 /* Работа со стеганопрограммами */
 .stego_work__container {
     width: 100%;
@@ -935,7 +960,10 @@ svg g {
 .addFolder-row-4
 {
     display: none;
-    color: darkslategrey;
+}
+
+.uploadDirectory, #uploadDirectory {
+    color: var(--base-color);
 }
 
 /* Handlers administration */
@@ -978,3 +1006,14 @@ svg g {
     text-align: center;
     font-size: 30px;
   }
+
+.createBusinessForm, .addFileBusinessForm, .newBusinessForm, .BusinessForm {
+    display: none;
+}
+
+.BusinessForm span {
+    width: 100%;
+    text-align: center;
+}
+
+/* forms */

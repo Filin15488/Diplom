@@ -7,7 +7,7 @@ class Users {
 
     public function __construct()
     {
-        $sql = '  SELECT id_users, name_role, stego_as.dbo.users.id_role, name_users, max_file_size, max_files_count, max_files_current_count, stego_as.dbo.users.[password] FROM stego_as.dbo.users 
+        $sql = '  SELECT id_users, name_role, stego_as.dbo.users.id_role, [activate] ,name_users, max_file_size, max_files_count, max_files_current_count, stego_as.dbo.users.[password] FROM stego_as.dbo.users 
         INNER JOIN stego_as.dbo.role ON stego_as.dbo.users.id_role = stego_as.dbo.role.id_role';
 
         require("../inclusion/db.php");
@@ -50,6 +50,20 @@ class Users {
         }
         return $str;
     }
+
+    public function get_count_users () {
+        return count($this->users_info);
+    }
+
+    public function get_all_users_id () {
+        $arr = [];
+        foreach ($this->users_info as $key => $value) {
+            $arr [] = $key;
+        }
+        return $arr;
+    }
+
+    
 
     // private
     private array $users_info = [];

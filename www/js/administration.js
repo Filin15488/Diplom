@@ -1,13 +1,15 @@
 // BUTTONS
 const addNewUserButton = document.getElementById("addNewUser");
 const editUserButton = document.getElementById("editUser");
-
+const activateUsersButton = document.getElementById("activateUsers");
 // MODAL
 const modal = document.getElementById("modal");
 
 // FORMS
 const addUserForm = document.getElementById("addUserForm");
 const editUserForm = document.getElementById("editUserForm");
+const activeUserForm = document.getElementById("activate-users");
+
 
 // EVENTS
 addNewUserButton.addEventListener("click", () => {
@@ -18,6 +20,11 @@ addNewUserButton.addEventListener("click", () => {
 editUserButton.addEventListener("click", () => {
   modal.classList.add("modal-parent--open");
   editUserForm.style.display = "block";
+})
+
+activateUsersButton.addEventListener("click", () => {
+  modal.classList.add("modal-parent--open");
+  activeUserForm.style.display = "block";
 })
 
 // Form handlers
@@ -34,6 +41,7 @@ modal.addEventListener("click", function (event) {
   modal.classList.remove("modal-parent--open")
   addUserForm.style.display = "none";
   editUserForm.style.display = "none";
+  activeUserForm.style.display = "none"
   errorHandler.style.display = "none";
   doneHandler.style.display = "none";
 })
