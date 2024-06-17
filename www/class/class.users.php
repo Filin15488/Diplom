@@ -58,12 +58,12 @@ class Users {
     public function get_all_users_id () {
         $arr = [];
         foreach ($this->users_info as $key => $value) {
-            $arr [] = $key;
+            $arr [] += $key;
         }
         return $arr;
     }
 
-    
+
 
     // private
     private array $users_info = [];

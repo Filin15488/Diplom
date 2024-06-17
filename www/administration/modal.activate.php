@@ -4,7 +4,7 @@ require_once("../class/class.users.php");
 
 <div class="activate" id="activate-users">
     <h2>Активация пользователей</h2>
-    <form action="#" method="post">
+    <form action="./acitvate.php" method="post">
         <?php
         $list = new Users;
         $ids = $list->get_all_users_id();
@@ -18,9 +18,13 @@ require_once("../class/class.users.php");
                     ?>
                 </div>
                 <div class="userActiva">
-                    <input type="checkbox" name="<?php echo $list->get_users_info($ids[$i])['name_users'] ?>" class="checkbox-input" <?php
+                    <input type="checkbox" name="<?php echo $list->get_users_info($ids[$i])['id_users'] ?>" class="checkbox-input" <?php
                                                                                                                                         if ($list->get_users_info($ids[$i])['activate'] == 1) {
                                                                                                                                             echo "checked";
+                                                                                                                                        }
+                                                                                                                                        else
+                                                                                                                                        {
+                                                                                                                                            echo "disable";
                                                                                                                                         }
                                                                                                                                         ?>>
                 </div>

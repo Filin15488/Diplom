@@ -28,6 +28,10 @@ class CurrentUser {
         
     }
 
+    public function get_id () {
+        return $this->user_data['id_users'];
+    }
+
     public function get_data () {
         return $this->user_data;
     }

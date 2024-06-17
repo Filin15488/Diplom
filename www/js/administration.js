@@ -36,20 +36,26 @@ modal.querySelector(".modal").addEventListener("click", function (event) {
   event._isClick = true
 })
 
-modal.addEventListener("click", function (event) {
-  if (event._isClick === true) return
+// функция закрытия модалки
+
+function disable () {
   modal.classList.remove("modal-parent--open")
   addUserForm.style.display = "none";
   editUserForm.style.display = "none";
   activeUserForm.style.display = "none"
   errorHandler.style.display = "none";
   doneHandler.style.display = "none";
+}
+
+modal.addEventListener("click", function (event) {
+  if (event._isClick === true) return
+  disable();
 })
 
 // Закрытие при нажатии на Esc
 window.addEventListener("keydown", function (event) {
   if (event.key === "Escape") {
-    modal.classList.remove("modal-parent--open")
+    disable ();
   }
 })
 
